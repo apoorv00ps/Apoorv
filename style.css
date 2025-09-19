@@ -1,0 +1,123 @@
+body {
+  background-color: #005F56;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.circle {
+  width: 500px;
+  height: 500px;
+  background-color: #7FFFD4;
+  border-radius: 50%;
+  opacity: 0.2;
+  z-index: -1;
+  position: absolute;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes rain {
+  from { top: -30px; }
+  to { top: 300vh; }
+}
+
+.raindrop {
+  position: absolute;
+  top: -30px;
+  width: 2px;
+  height: 10px;
+  background: #23857c;
+  animation-name: rain;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.header-box {
+  background-color: #001d1a;
+  color: whitesmoke;
+  border-radius: 7% 7%;
+  margin: 0 5%;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.header-box img {
+  width: 40%;
+  height: auto;;
+}
+
+.section {
+  z-index: 1;
+  color: #001d1a;
+  border-radius: 7px;
+  text-align: center;
+  margin: 20px;
+}
+
+.section-title {
+  background-color: #23857c;
+  border-radius: 30%;
+  display: inline-block;
+  width: 60%;
+  padding: 5px 0;
+}
+
+.section-title.short {
+  width: 40%;
+}
+
+.section ul {
+  list-style-position: inside;
+  text-align: center;
+  padding-left: 0;
+  margin: 0 auto;
+}
+
+.section a {
+  text-decoration: none;
+  color: #001d1a;
+  font-size: 20px;
+}
+
+.footer {
+  background-color: #001d1a;
+  color: whitesmoke;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 7px;
+  padding: 10px;
+  gap: 10px;
+}
+
+.footer-title {
+  font-size: 30px;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.socials a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.socials img {
+  width: 20px;
+  height: auto;
+  vertical-align: middle;
+}
+.socials a[href*="gmail"] img {
+  width: 15px;
+}
