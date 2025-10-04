@@ -89,6 +89,11 @@ body {
   font-size: 20px;
 }
 
+.section p1 {
+  color:#990000;
+  text-weightt:bold;
+}
+
 .footer {
   background-color: #001d1a;
   color: whitesmoke;
@@ -158,8 +163,3 @@ body {
   height: 20vh;
   height: auto;
 }
-.work-line p1{
-  color: #990000;
-  text-weight:bold;
-}
-
